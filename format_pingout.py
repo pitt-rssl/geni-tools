@@ -72,8 +72,8 @@ def main(argv):
             min_rtts[dest_id][source_id] = rtt
 
     # print out final edge list
-    for i in xrange(1,num_nodes+1): # for each source
-        for j in xrange(1,num_nodes+1): # for each dest
+    for i in range(1,num_nodes+1): # for each source
+        for j in range(1,num_nodes+1): # for each dest
             if i == j: # don't include edge from node to itself
                 continue
             print("   {source:2d} {dest:2d} {rtt:4d} # {sname:s} {dname:s}".format(
